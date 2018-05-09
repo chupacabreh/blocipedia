@@ -17,6 +17,8 @@ source 'https://rubygems.org'
    # Use sqlite3 as the development database for Active Record
    gem 'sqlite3'
    gem 'web-console', '~> 2.0'
+   gem 'rspec-rails', '~> 3.0'
+   gem 'rails-controller-testing'
  end
 
  # Use Puma as the app server
@@ -34,6 +36,8 @@ source 'https://rubygems.org'
  gem 'jbuilder', '~> 2.5'
 
  gem 'thor', '0.19.1'
+
+ gem 'devise'
 
  gem 'bootstrap-sass', '~> 3.3.7'
 
