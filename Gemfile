@@ -41,6 +41,8 @@ source 'https://rubygems.org'
 
  gem 'bootstrap-sass', '~> 3.3.7'
 
+ gem 'figaro', '1.0'
+
 
  group :development do
    gem 'listen', '~> 3.0.5'
