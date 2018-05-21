@@ -8,3 +8,19 @@ body {
   padding: 3rem 1.5rem;
   text-align: center;
 }
+
+h1 {
+  text-align: center;
+}
+
+.jumbotron {
+  margin: 30px 30px;
+  padding-top: 10px;
+  background-color: transparent !important;
+  border: 2px solid black;
+  border-radius: 0px !important;
+}
+
+.btn {
+  margin: 20px;
+}

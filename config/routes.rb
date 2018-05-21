@@ -1,15 +1,10 @@
 Rails.application.routes.draw do
-  devise_for :users
-  get 'welcome/index'
-
-  get 'welcome/edit'
-
-  get 'welcome/display'
-
-  get 'welcome/add'
-
-  get 'welcome/signup'
+  resources :wikis
 
   root 'welcome#index'
 
+  get 'welcome/about'
+
+  devise_for :users
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -38,6 +38,7 @@ source 'https://rubygems.org'
  gem 'thor', '0.19.1'
 
  gem 'devise'
+ gem 'devise-bootstrap-views'
 
  gem 'bootstrap-sass', '~> 3.3.7'
 
