@@ -13,4 +13,12 @@ class User < ApplicationRecord
     self.role ||= :standard
   end
 
+  def upgrade
+    update_attribute(:role, :premium )
+  end
+
+  def downgrade
+    update_attribute(:role, :standard)
+  end
+
 end

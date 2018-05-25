@@ -39,9 +39,10 @@ source 'https://rubygems.org'
  gem 'devise'
  gem 'devise-bootstrap-views'
  gem 'bootstrap-sass', '~> 3.3.7'
- gem 'figaro', '1.0'
+ gem 'figaro'
  gem 'pundit'
  gem 'faker'
+ gem 'stripe'
 
 
  group :development do
