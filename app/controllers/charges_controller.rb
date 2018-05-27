@@ -41,7 +41,11 @@ class ChargesController < ApplicationController
 
   def downgrade
     current_user.update_attribute(:role, :standard)
-    flash[:notice] = "Your account has been downgraded to standard."
+    
+    current_user.wikis.where(private: true).each do |wiki|
+      wiki.update_attributes(private: false)
+    end
+    flash[:notice] = "Your account has been downgraded to standard. All of your private wikis have been made public."
     redirect_to root_path
   end
 
