@@ -3,6 +3,8 @@ class WikisController < ApplicationController
 
   def index
     authorize Wiki
+    @wikis = policy_scope(Wiki)
+
     if current_user && current_user.admin?
       @wikis = Wiki.all
     elsif current_user
@@ -37,6 +39,7 @@ class WikisController < ApplicationController
 
   def edit
     @wiki = Wiki.find(params[:id])
+    @users = User.where.not(role: 'admin')
     authorize @wiki
   end
 
